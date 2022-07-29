@@ -1,0 +1,41 @@
+    *{
+        background-color: blueviolet;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins';
+    }
+
+    .content{
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+    }
+    
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10rem 0;
+    }
+    #generateBtn{
+        padding: 8px 12px;
+        background: blue;
+        border: none;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+    }
+    #generateBtn:hover{
+        box-shadow: 0 0 10px black;
+    }
+    #pass{
+        width: 100px;
+        height: 30px;
+        border: 2px Solid deeppink;
+        padding: 5px 10px;
+        background: white;
+        color: black;
+    }

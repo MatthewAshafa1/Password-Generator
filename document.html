@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="document.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            Hello Fam :) <br>
+            Wanna Generate a Custom Password ? <br>
+            You're in the Right place ;)
+        </div>
+        <h5 id="pass"></h5>
+        <br>
+        <br>
+        <button id="generateBtn" onclick="generatePassword()">Generate Password</button>
+    </div>
+        <!--JAVASCRIPT-->
+
+    <script>
+        function generatePassword() {
+            var length = 9,
+            charset = "!@#$%*&^()_+-.,:[]{}()abcdefghijklmnopqrstuvwxyz:ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+            pass = "";
+
+            for (var i =0, n = charset.length; i < length; ++i){
+                pass += charset.charAt(Math.floor(Math.random()  * n));
+            }
+            document.getElementById("pass").innerText = pass;
+        }
+    </script>
+<!--
+    <h2>Javascript Array Sort</h2>
+    <p>The Lowest number is <span id="demo"></span>.</p>
+
+    <script>
+        var points = [40, 100, 1, 5, 25, 10]
+        document.getElementById("demo").innerHTML= myArrayMax(points);
+
+        function myArrayMax(points) {
+            return Math.max.apply(null,points);
+        }
+    </script>
+-->
+
+    <!--<p>Input your age and click the button:</p>
+    <input id="age" value="18">
+    <button onclick="myFunction()">Try it</button>
+    <p id="dem"></p>-->
+
+    <!--<script>
+        /* function myFunction(){
+            var age, votable;
+            age = Number(document.getElementById("age").value);
+            if (isNaN(age)){
+                voteable = "Input is not a number"
+            } else {
+                votable = (age < 18)? "Too young": "Old Enough";
+            }
+            document.getElementById("dem").innerHTML= votable + " to vote";
+        }*/
+
+    </script>-->
+
+    <!--<p id="demo"></p> 
+
+    <script>
+        /*--if (new Date().getHours() < 12){
+            document.getElementById("").innerHTML = "Good Morning!";
+        } else{
+            document.getElementById("").innerHTML = "Good Day!";
+        }
+        if (new Date().getHours() > 18){
+            document.getElementById("").innerHTML = "Good Evening!";
+        }
+        if (new Date().getHours() > 22){
+            document.getElementById("").innerHTML = "Good Night!"
+        }*/
+
+        /*var day, text;
+        switch(new Date().getDay()){
+            case 0: 
+                day="Sunday";
+                text = "Welcome to A new Week!"
+                break;
+            case 1: 
+                day="Monday";
+                text = "Happy Week!"
+                break;
+            case 2: 
+                day="Tuesday";
+                text = "How's your Day going?"
+                break;
+            case 3: 
+                day="Wednesday";
+                text = "Phew It'll soon be weekend"
+                break;
+            case 4:
+                day = "Thursday";
+                text = "Will soon be weekend"
+                break;
+            case 5:
+                day =" Friday";
+                text = "Happy Weekend"
+                break;
+            case 6:
+                day= "Saturday";
+                text = "Enjoy the rest of the week!"
+                break;
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day + "  !" + "<br>" + text;*/
+
+
+        var cars = [ "Audi", "BMW", "Honda", "Toyota"]
+        var text = " ";
+        var i;
+
+        for(i = 0; i < cars.length; i++) {
+            text += cars[i] + "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>--> 
+
+    <!--<p>Please input a number between 6 and 10:</p>
+
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+        /*function myFunction(){
+            var message, x;
+            message = document.getElementById("p01");
+            message.innerHTML="";
+            x = document.getElementById("demo").value;
+            try{
+                if(x=="") throw "empty";
+                if(isNaN(x)) throw "not a number"
+                x = Number(x);
+                if(x < 6) throw "too low";
+                if(x > 10) throw "too high";
+            }
+            catch(err){
+                message.innerHTML = "Input is " + err;
+            }
+        }*/
+
+
+    </script>-->
+
+    <!--<h2>Javascript Arrow  Function</h2>
+    <p>This example shows the syntax of an Arrow function, and how to use it</p>-->
+
+    <!--<h2>Javascript Class Method</h2>
+    <p>How to define and use a Class Method.</p>-->
+    
+   <!-- <p id="demo"></p>
+    <p id="demo"></p>-->
+
+    <script>
+    /*    var hello;
+    //    
+    //    hello= ( ) => {
+    //        return "Hello World";
+    //    }
+    //    document.getElementById("demo").innerHTML = hello();*/
+//
+    //    class Car{
+    //        constructor(name, year){
+    //            this.name = name;
+    //            this.year = year;
+    //        }
+    //        age(){
+    //            let date = new Date();
+    //            return date.getFullYear() - this.year;
+    //        }
+//
+    //    }
+    //    let myCar = new Car("Honda" , 2011);
+    //    document.getElementById("demo").innerHTML= "My car is " + myCar.age() + " years old."
+    </script>
+</body>
+</html>
